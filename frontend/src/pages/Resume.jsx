@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
+import Layout from "../components/Layout";
 
 function Resume() {
   return (
