@@ -14,14 +14,14 @@ function Navbar() {
           <Link to="/about">
             <li className="text-lg text-white font-Raleway">A PROPOS</li>
           </Link>
-          <Link to="/monparcours">
+          <Link to="/resume">
             <li className="text-lg text-white font-Raleway">MON PARCOURS</li>
           </Link>
         </ul>
         <Link to="/contact">
           <button
             type="button"
-            className="bg-orange p-2 w-32 rounded-full font-Raleway text-light mr-3"
+            className="bg-orange border-yellow border-2 p-2 w-32 rounded-full font-Raleway text-light mr-3"
           >
             Contact me
           </button>
