@@ -32,7 +32,7 @@ CREATE TABLE projet_language (
 
 INSERT INTO `language` VALUES (1, "HTML", "html.png"), (2, "CSS", "css.png"), (3, "JavaScript", "js.png"), (4, "React JS", "react.png"), (5, "Tailwind CSS", "tailwind.png"), (6, "Node JS", "node.png"), (7, "Express JS", "express.png"), (8, "Mysql", "mysql.png"), (9, "GitHub", "github.png"), (10, "VS Code", "vscode.png");
 
-INSERT INTO `project` VALUES (1, "Wildbook", "dog.jpg", "arkantik.github.io/WildBook/"), (2, "Who wiz it?", "door.png", "who-wiz-it.remote-fr-2.wilders.dev/"), (3, "Choîteau-Hackaton", "bunny.jpg", "https://choixteau.netlify.app/"), (4, "Emmaus Connect-Hackaton", "tea",  "https://github.com/OyhanaM/Hackaton-Emmaus-Connect");
+INSERT INTO `project` VALUES (1, "Wildbook", "dog.jpg", "https://arkantik.github.io/WildBook/"), (2, "Who wiz it?", "orange.jpg", "https://who-wiz-it.remote-fr-2.wilders.dev/"), (3, "Choîteau - Hackaton", "bunny.jpg", "https://choixteau.netlify.app/"), (4, "Emmaus Connect - Hackaton", "tea.jpg",  "https://github.com/OyhanaM/Hackaton-Emmaus-Connect");
 
 
 
