@@ -1,19 +1,15 @@
-{/*CREATE TABLE user (
+CREATE TABLE user (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   lastname VARCHAR(50) NOT NULL,
   firstname VARCHAR(50) NOT NULL,
   email VARCHAR(255) NOT NULL,
   hashedPassword VARCHAR(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;*/}
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
 
 CREATE TABLE language (
   id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  user_id INT NULL,
-  logo VARCHAR(150),
   languageName VARCHAR(150),
-  CONSTRAINT fk_user_project
-  FOREIGN KEY (user_id)
-  REFERENCES user(id)
+  logo VARCHAR(150)
 )ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
 
 CREATE TABLE project (
@@ -34,8 +30,7 @@ CREATE TABLE projet_language (
   REFERENCES language(id)
   )ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
 
-
-
+INSERT INTO `language` VALUES (1, "HTML", "html.png"), (2, "CSS", "css.png"), (3, "JavaScript", "js.png"), (4, "React JS", "react.png"), (5, "Tailwind CSS", "tailwind.png"), (6, "Node JS", "node.png"), (7, "Express JS", "express.png"), (8, "Mysql", "mysql.png"), (9, "GitHub", "github.png"), (10, "VS Code", "vscode.png");
 
 
 

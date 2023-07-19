@@ -1,6 +1,19 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 
 function Home() {
+  const [language, setLanguage] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_BACKEND_URL}/languages`)
+      .then((res) => {
+        setLanguage(res.data);
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <Layout>
       <div className="flex bg-homebg h-screen bg-cover bg-no-repeat justify-center gap-40 items-center">
@@ -25,48 +38,17 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex justify-between items-center pt-12">
-            <img className="w-14 h-14" src="/assets/logo/html.png" alt="html" />
-            <img className="w-14 h-14" src="/assets/logo/css.png" alt="css" />
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/js.png"
-              alt="javascript"
-            />
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/tailwind.png"
-              alt="tailwind"
-            />
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/react.png"
-              alt="react"
-            />
-          </div>
-          <div className="flex justify-between items-center pt-8">
-            <img className="w-14 h-14" src="/assets/logo/node.png" alt="node" />
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/express.png"
-              alt="express"
-            />
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/mysql.png"
-              alt="mysql"
-            />
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/github.png"
-              alt="github"
-            />
-
-            <img
-              className="w-14 h-14"
-              src="/assets/logo/vscode.png"
-              alt="vs code"
-            />
+          <div className="flex justify-between flex-wrap gap-5 w-5/6 items-center pt-12">
+            {language.map((languages) => (
+              <img
+                key={languages.id}
+                className="w-14 h-14"
+                src={`${import.meta.env.VITE_BACKEND_URL}/assets/logo/${
+                  languages.logo
+                }`}
+                alt={languages.languageName}
+              />
+            ))}
           </div>
         </div>
       </div>

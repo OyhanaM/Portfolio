@@ -11,10 +11,10 @@ function Navbar() {
           <Link to="/portfolio">
             <li className="text-lg text-white font-Raleway">PORTFOLIO</li>
           </Link>
-          <Link to="/about">
+          <Link to="/apropos">
             <li className="text-lg text-white font-Raleway">A PROPOS</li>
           </Link>
-          <Link to="/cv">
+          <Link to="/monparcours">
             <li className="text-lg text-white font-Raleway">MON PARCOURS</li>
           </Link>
         </ul>
