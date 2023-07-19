@@ -18,7 +18,7 @@ function Home() {
     <Layout>
       <div className="flex bg-homebg h-screen bg-cover bg-no-repeat justify-center gap-40 items-center">
         <img
-          className="border-[10px] border-white rounded-lg w-72"
+          className="border-8 border-white rounded-lg w-72"
           src="/assets/photos/photo.jpeg"
           alt="Oyhana"
         />
@@ -50,6 +50,7 @@ function Home() {
               />
             ))}
           </div>
+          <div className="flex justify-center mt-10" />
         </div>
       </div>
     </Layout>
