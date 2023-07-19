@@ -11,7 +11,7 @@ function Navbar() {
           <Link to="/portfolio">
             <li className="text-lg text-white font-Raleway">PORTFOLIO</li>
           </Link>
-          <Link to="/apropos">
+          <Link to="/about">
             <li className="text-lg text-white font-Raleway">A PROPOS</li>
           </Link>
           <Link to="/monparcours">
