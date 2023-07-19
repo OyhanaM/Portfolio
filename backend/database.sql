@@ -16,7 +16,7 @@ CREATE TABLE project (
   id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   projectName VARCHAR(150) NOT NULL,
   projectImage VARCHAR(150),
-  link VARCHAR(150)
+  link VARCHAR(250)
 )ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
 
 CREATE TABLE projet_language (
@@ -31,6 +31,8 @@ CREATE TABLE projet_language (
   )ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
 
 INSERT INTO `language` VALUES (1, "HTML", "html.png"), (2, "CSS", "css.png"), (3, "JavaScript", "js.png"), (4, "React JS", "react.png"), (5, "Tailwind CSS", "tailwind.png"), (6, "Node JS", "node.png"), (7, "Express JS", "express.png"), (8, "Mysql", "mysql.png"), (9, "GitHub", "github.png"), (10, "VS Code", "vscode.png");
+
+INSERT INTO `project` VALUES (1, "Wildbook", "dog.jpg", "arkantik.github.io/WildBook/"), (2, "Who wiz it?", "door.png", "who-wiz-it.remote-fr-2.wilders.dev/"), (3, "Choîteau-Hackaton", "bunny.jpg", "https://choixteau.netlify.app/"), (4, "Emmaus Connect-Hackaton", "tea",  "https://github.com/OyhanaM/Hackaton-Emmaus-Connect");
 
 
 
