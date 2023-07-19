@@ -15,7 +15,7 @@ export default {
     colors: {
       pink: "#FF97BB",
       orange: "#FF6600",
-      yellow: "#FFE289",
+      yellow: "#FFF69C",
       light: "#FFE4D2",
       black: "#272626",
       white: "#FFFFFF",

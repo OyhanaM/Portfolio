@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
@@ -17,10 +18,10 @@ function Portfolio() {
   return (
     <Layout>
       <div className="bg-light">
-        <h2 className="text-black text-center font-Caprasimo text-2xl p-10">
+        <h2 className="text-black text-center font-Caprasimo text-2xl p-5">
           Mes projets :
         </h2>
-        <div className="flex justify-around item-center p-10">
+        <div className="flex justify-around item-center pt-8">
           {project.map((projects) => (
             <div>
               <a href={projects.link} target="_blank" rel="noreferrer">
@@ -39,12 +40,19 @@ function Portfolio() {
             </div>
           ))}
         </div>
-        <div className="text-center p-8">
-          <h3 className="font-Caprasimo text-xl text-black">
-            "Toute technologie suffisamment avancée est indiscernable de la
-            magie."
+        <hr className="border-white border-2" />
+        <div className="text-center p-8 bg-yellow">
+          <h3 className="font-Caprasimo text-3xl text-black">
+            Et avant de coder, tu faisais quoi ?
           </h3>
-          <h4 className="font-Raleway text-orange text-lg">Arthur C. Clarke</h4>
+          <Link to="/resume">
+            <button
+              className="bg-orange cursor-pointer text-white p-2 font-Raleway rounded-full mt-8"
+              type="button"
+            >
+              Cliquez ici pour découvrir mes expériences passées
+            </button>
+          </Link>
         </div>
       </div>
     </Layout>

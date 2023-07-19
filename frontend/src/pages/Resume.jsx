@@ -113,11 +113,11 @@ function Resume() {
           />
         </div>
       </div>
-      <hr className="border-yellow border-2" />
+      <hr className="border-white border-2" />
 
       {/* Call to action */}
 
-      <div className="bg-light p-12 text-center">
+      <div className="bg-yellow p-12 text-center">
         <h2 className="font-Caprasimo text-3xl text-black">
           C'est très bien tout ça mais cela n'a RIEN AVOIR avec le développement
           web
@@ -131,10 +131,10 @@ function Resume() {
         </p>
         <Link to="/about">
           <button
-            className="bg-orange cursor-pointer text-white p-2 font-Raleway rounded-xl mt-8"
+            className="bg-orange cursor-pointer text-white p-2 font-Raleway rounded-full mt-8"
             type="button"
           >
-            Cliquez pour découvrir mes pouvoirs magiques
+            Cliquez ici pour découvrir mes pouvoirs magiques
           </button>
         </Link>
       </div>
