@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import { Link } from "react-router-dom";
 
 function Resume() {
   return (
@@ -128,12 +129,14 @@ function Resume() {
           <br />
           Pourquoi ?
         </p>
-        <button
-          className="bg-orange text-white p-2 font-Raleway rounded-xl mt-8"
-          type="button"
-        >
-          Cliquez pour découvrir mes pouvoirs magiques
-        </button>
+        <Link to="/about">
+          <button
+            className="bg-orange cursor-pointer text-white p-2 font-Raleway rounded-xl mt-8"
+            type="button"
+          >
+            Cliquez pour découvrir mes pouvoirs magiques
+          </button>
+        </Link>
       </div>
     </Layout>
   );
