@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
@@ -50,7 +51,16 @@ function Home() {
               />
             ))}
           </div>
-          <div className="flex justify-center mt-10" />
+          <div className="flex justify-end">
+            <Link to="/portfolio">
+              <button
+                className="bg-orange cursor-pointer text-light p-2 font-Raleway rounded-full mt-12"
+                type="button"
+              >
+                Cliquez ici pour découvrir mes projets
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </Layout>

@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 
 function About() {
   return (
     <Layout>
-      <div className="bg-light h-fit p-36">
+      <div className="bg-light p-16">
         <div className="flex justify-around items-center">
           <div className="w-1/3">
             <h2 className="font-Caprasimo text-2xl text-center p-5 text-black">
@@ -25,6 +26,16 @@ function About() {
             src="/assets/photos/door.jpg"
             alt="Oyhana"
           />
+        </div>
+        <div className="flex justify-center pt-10">
+          <Link to="/contact">
+            <button
+              className="bg-orange cursor-pointer text-white p-2 font-Raleway rounded-full mt-8"
+              type="button"
+            >
+              Cliquez ici pour découvrir mes pouvoirs magiques
+            </button>
+          </Link>
         </div>
       </div>
     </Layout>
