@@ -32,5 +32,5 @@ INSERT INTO `language` VALUES (1, "HTML", "html.png"), (2, "CSS", "css.png"), (3
 
 INSERT INTO `project` VALUES (1, "Who wiz it?", "orange.jpg", "https://who-wiz-it.remote-fr-2.wilders.dev/"), (2, "Choîteau - Hackaton", "bunny.jpg", "https://choixteau.netlify.app/"), (3, "Emmaus Connect - Hackaton", "tea.jpg",  "https://github.com/OyhanaM/Hackaton-Emmaus-Connect");
 
-
+INSERT INTO `user`VALUES (1, "oyhana.mahjoubi@gmail.com", "$argon2id$v=19$m=65536,t=5,p=1$bA2B4KWtmuBSkYWIHlD9ig$tb9JVzK+afCKJ7TULBk2QFknTBwekcUWeKdfZ+OVfzk" )
 
