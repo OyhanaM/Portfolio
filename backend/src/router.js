@@ -33,5 +33,6 @@ router.delete("/users/:id", userControllers.deleteUser);
 // Gestion du login :
 
 router.post("/login", recognizeUser, verifyPassword);
+router.get("/logout", userControllers.logout);
 
 module.exports = router;

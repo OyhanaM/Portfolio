@@ -3,9 +3,9 @@ const userManager = require("../models/userManager");
 const recognizeUser = (req, res, next) => {
   userManager
     .getUserByEmail(req.body)
-    .then((user) => {
+    .then(([user]) => {
       if (user[0] != null) {
-        req.user = user;
+        [req.user] = user;
         next();
       } else {
         res.status(401).send("Error");
