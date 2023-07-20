@@ -38,4 +38,8 @@ const deleteUser = (req, res) => {
     });
 };
 
-module.exports = { getUsers, postUser, deleteUser };
+const logout = (req, res) => {
+  res.clearCookie("appjwt").status(200).json({ message: "User logged out" });
+};
+
+module.exports = { getUsers, postUser, deleteUser, logout };
