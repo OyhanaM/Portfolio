@@ -15,3 +15,50 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+
+@layer utilities {
+  .background-color {
+    background: -webkit-linear-gradient(110deg, #FFE4D2 60%, #FFFFFF 60%);
+    background: -o-linear-gradient(110deg, #FFE4D2 60%, #FFFFFF 60%);
+    background: -moz-linear-gradient(110deg, #FFE4D2 60%, #FFFFFF 60%);
+    background: linear-gradient(110deg, #FFE4D2 60%, #FFFFFF 60%);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .image-hover {
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .image-hover:hover {
+    filter: brightness(70%) saturate(120%);
+  }
+
+  .button {
+    box-shadow: #FF97BB 5px 5px 1px;
+    background-color: #FF6600;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 0.5rem ;
+    border-radius: 0.125rem ;
+  }
+
+  .buttonNavBar {
+    box-shadow: #FFF69C 3px 3px 1px;
+    background-color: #FF6600;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 0.2rem ;
+    border-radius: 0.125rem ;
+  }
+
+}

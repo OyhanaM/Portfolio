@@ -18,15 +18,15 @@ function Portfolio() {
   return (
     <Layout>
       <div className="bg-light">
-        <h2 className="text-black text-center font-Caprasimo text-2xl p-5">
+        <h2 className="text-black text-center font-Caprasimo text-3xl p-5">
           Mes projets :
         </h2>
         <div className="flex justify-around item-center pt-8">
           {project.map((projects) => (
-            <div>
+            <div className="image-hover">
               <a href={projects.link} target="_blank" rel="noreferrer">
                 <img
-                  className="w-56 cursor-pointer border-8 rounded-t-lg transition-colors border-white duration-300 hover:bg-orange"
+                  className="w-56 cursor-pointer border-8 rounded-t-lg border-white "
                   src={`${import.meta.env.VITE_BACKEND_URL}/assets/portfolio/${
                     projects.projectImage
                   }`}
@@ -41,16 +41,13 @@ function Portfolio() {
           ))}
         </div>
         <hr className="border-white border-2" />
-        <div className="text-center p-8 bg-yellow">
+        <div className="text-center p-8 bg-yellow pb-14">
           <h3 className="font-Caprasimo text-3xl text-black">
             Et avant de coder, tu faisais quoi ?
           </h3>
           <Link to="/resume">
-            <button
-              className="bg-orange cursor-pointer text-white p-2 font-Raleway rounded-full mt-8"
-              type="button"
-            >
-              Cliquez ici pour découvrir mes expériences passées
+            <button className=" font-Raleway button mt-8" type="button">
+              Découvrir mes expériences passées
             </button>
           </Link>
         </div>
