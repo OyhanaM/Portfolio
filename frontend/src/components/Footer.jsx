@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="bg-pink flex flex-end w-full ">
-      <div className="flex mx-10">
+    <footer className="bg-pink w-full ">
+      <div className="flex justify-around mx-10">
         <div className="flex gap-5 p-2">
           <a href="https://www.linkedin.com/in/oyhana-mahjoubi-6a8798160/">
             <img
@@ -24,9 +24,7 @@ function Footer() {
             src="/assets/logo/copyright-logo.png"
             alt="Designé et codé par Oyhana"
           />
-          <h3 className="text-white font-Raleway">
-            Codé avec amour et bubble tea par Oyhana
-          </h3>
+          <h3 className="text-white font-Raleway">Codé par Oyhana avec 💛</h3>
         </div>
       </div>
     </footer>
